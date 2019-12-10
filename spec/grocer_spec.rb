@@ -217,7 +217,7 @@ describe "Grocer" do
       while  i < clearance_applied_cart.length do
         item = clearance_applied_cart[i]
         expect(item[:price]).to be_within(0.1).of(clearance_prices[item[:item]])
-        i += 1
+        i += 1  
       end
     end
   end
